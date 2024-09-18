@@ -14,8 +14,6 @@ public interface ServiceDTO <Entity, Request, Response>{
 
     List<Entity> findAll();
 
-    List<Entity> findAll(Example<Entity> example);
-
     Entity findById(Long id);
 
     Entity save(Entity e);

@@ -1,7 +1,6 @@
 package br.com.fiap.locaweb_email.dto.response;
 
 import lombok.Builder;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -16,5 +15,6 @@ public record EmailResponse(
         LocalDateTime receivedAt,
         UserResponse sender,
         UserResponse recipient,
+        FolderResponse folder,
         List<AttachmentResponse> attachments
 ) {}
